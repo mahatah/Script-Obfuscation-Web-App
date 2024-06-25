@@ -67,7 +67,7 @@ your_project_directory/
 ├── requirements.txt
 ├── static/
 │   └── images/
-│       └── your_image.png
+│       └── obfuscate.png
 ├── templates/
 │   └── index.html
 ├── uploads/
