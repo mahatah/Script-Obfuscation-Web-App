@@ -22,8 +22,8 @@ This Flask web application provides a convenient interface for obfuscating scrip
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/mahatah/Script-Obfuscation-Web-App.git
+   cd Script-Obfuscation-Web-App
    ```
 
 2. **Set Up a Virtual Environment** (optional but recommended):
