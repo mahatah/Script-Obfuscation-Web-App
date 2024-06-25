@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Script for Obfuscation</title>
+    <style>
+        body {
+            background: url('{{ url_for('static', filename='images/obfuscate.png') }}') no-repeat center center fixed;
+            background-size: cover;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #00ff00;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        form {
+            background-color: rgba(51, 51, 51, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00ff00;
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #00ff00;
+            color: #1e1e1e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #00cc00;
+        }
+        .description {
+            margin: 20px;
+            font-size: 1.2em;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Script for Obfuscation</h1>
+    <div class="description">
+        Originally intended for PowerShell script obfuscation, but any filetype is acceptable. Strings in file must be wrapped in single or double quotes to be obfuscated.
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="submit" value="Upload">
+    </form>
+    <footer>
+        &copy; 2024 Mahatah (https://victim.site). All rights reserved.
+    </footer>
+</body>
+</html>

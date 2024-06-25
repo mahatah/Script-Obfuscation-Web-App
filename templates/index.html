@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Script for Obfuscation</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: #00ff00;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #00ff00;
+        }
+        form {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #00ff00;
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #00ff00;
+            color: #1e1e1e;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #00cc00;
+        }
+        .description {
+            margin: 20px;
+            font-size: 1.2em;
+        }
+        .container {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .container img {
+            width: 50%;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Upload Script for Obfuscation</h1>
+    <div class="description">
+        Originally intended for PowerShell script obfuscation, but any filetype is acceptable. Strings in file must be wrapped in single or double quotes to be obfuscated.
+    </div>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" required>
+        <input type="submit" value="Upload">
+    </form>
+    <div class="container">
+        <img src="{{ url_for('static', filename='images/obfuscate.png') }}" alt="Hacker Theme Image">
+    </div>
+    <footer>
+        &copy; 2024 Mahatah (https://victim.site). All rights reserved.
+    </footer>
+</body>
+</html>
