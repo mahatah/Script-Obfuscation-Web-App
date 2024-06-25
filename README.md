@@ -6,7 +6,6 @@ This Flask web application provides a convenient interface for obfuscating scrip
 - **File Upload**: Users can upload their script files directly through the web interface.
 - **String Obfuscation**: The application processes the uploaded file, identifying and obfuscating all string literals.
 - **Download Processed File**: The obfuscated script file is made available for download.
-- **Hacker-Themed UI**: The web interface features a hacker-themed design to enhance user experience.
 
 ### How It Works
 1. **Upload Script**: Users upload their script files through the provided form.
