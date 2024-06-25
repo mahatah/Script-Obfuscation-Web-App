@@ -60,7 +60,7 @@ Replace `5000` with your desired port number.
 Ensure your project directory is structured as follows:
 
 ```
-your_project_directory/
+Script-Obfuscation-Web-App/
 │
 ├── app.py
 ├── requirements.txt
