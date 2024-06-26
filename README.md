@@ -1,6 +1,6 @@
 ## Script Obfuscation Web App
 
-This Flask web application provides a convenient interface for obfuscating scripts by converting string literals into their ASCII representations. Originally designed for PowerShell script obfuscation, it can handle any file type where strings are wrapped in single or double quotes. Note, however, that currently the output will always produce obfuscated strings that are formatted for PowerShell scripts. Future revisions intend to extend support to other languages.
+This Flask web application provides a convenient interface for obfuscating scripts by converting string literals into their ASCII representations. Originally designed for PowerShell script obfuscation, it can handle any file type where strings are wrapped in single or double quotes. Note, however, that currently the output only supports string detection and obfuscation formatting for PowerShell and Python scripts. Additional languages may be supported in future revisions.
 
 ### Features
 - **File Upload**: Users can upload their script files directly through the web interface.
